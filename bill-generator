@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 
-int main() {
+int main()
+ {
 	char itemName[50];
 	int quantity;
 	float price, total, discount, finalBill;
@@ -24,13 +25,13 @@ int main() {
 	printf("           RECEIPT           \n");
 	printf("=============================\n");
 	printf("Item:       %s\n", itemName);
-	printf("Price:      $%.2f\n", price);
+	printf("Price:      %.2f\n", price);
 	printf("Qty:        %d\n", quantity);
 	printf("-----------------------------\n");
-	printf("Total:      $%.2f\n", total);
-	printf("Discount:   -$%.2f (10%%)\n", discount);
+	printf("Total:      %.2f\n", total);
+	printf("Discount:   %.2f (10%%)\n", discount);
 	printf("-----------------------------\n");
-	printf("FINAL BILL: $%.2f\n", finalBill);
+	printf("FINAL BILL:  %.2f\n", finalBill);
 	printf("=============================\n");
 
 	return 0;
