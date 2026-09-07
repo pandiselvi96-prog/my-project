@@ -1,0 +1,37 @@
+﻿#include <stdio.h>
+
+int main() {
+	char itemName[50];
+	int quantity;
+	float price, total, discount, finalBill;
+
+	printf("=== SIMPLE BILL GENERATOR ===\n\n");
+
+	printf("Enter item name: ");
+	scanf("%49s", itemName);
+
+	printf("Enter unit price: ");
+	scanf("%f", &price);
+
+	printf("Enter quantity: ");
+	scanf("%d", &quantity);
+
+	total = price * quantity;
+	discount = total * 0.10f;
+	finalBill = total - discount;
+
+	printf("\n=============================\n");
+	printf("           RECEIPT           \n");
+	printf("=============================\n");
+	printf("Item:       %s\n", itemName);
+	printf("Price:      $%.2f\n", price);
+	printf("Qty:        %d\n", quantity);
+	printf("-----------------------------\n");
+	printf("Total:      $%.2f\n", total);
+	printf("Discount:   -$%.2f (10%%)\n", discount);
+	printf("-----------------------------\n");
+	printf("FINAL BILL: $%.2f\n", finalBill);
+	printf("=============================\n");
+
+	return 0;
+}
