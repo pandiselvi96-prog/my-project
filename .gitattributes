@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#include <stdio.h>
+
+int main() {
+    printf("Hello, Git Repository!\n");
+    return 0;
+}
+
